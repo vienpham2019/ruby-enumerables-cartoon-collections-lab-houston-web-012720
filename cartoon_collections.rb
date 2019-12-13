@@ -20,7 +20,7 @@ def find_the_cheese(array)# code an argument here
   i = 0 
   while i < cheese_types.length do 
     current_cheese = cheese_types[i]
-    array.each {|element| return current_cheese if element.include?(current_cheese)}
+    array.each {|element| return cheese_types[i] if element.include?(cheese_types[i])}
     i += 1
   end
   return nil
