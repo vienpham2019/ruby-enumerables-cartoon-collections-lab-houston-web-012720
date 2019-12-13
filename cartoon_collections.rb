@@ -10,7 +10,7 @@ end
 
 def long_planeteer_calls(array)# code an argument here
   # Your code here
-  array.collect{|element| break element if element.length > 4}
+  array.collect{|element| return true if element.length > 4}
   return false
 end
 
